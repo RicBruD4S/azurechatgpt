@@ -14,7 +14,7 @@ export default async function RootLayout({
 }) {
   return (
     <ProtectedPage>
-      <MainMenu />
+      <MainMenu isOpen={/* Provide the value for isOpen */} setIsOpen={/* Provide the function for setIsOpen */} />
       <div className="flex-1">{children}</div>
     </ProtectedPage>
   );
