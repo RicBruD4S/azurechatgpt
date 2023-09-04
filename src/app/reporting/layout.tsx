@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useClient } from '@next/ui/client';
 import { ProtectedPage } from "@/features/auth/protected-page";
 import { MainMenu } from "@/features/menu/menu";
 import { AI_NAME } from "@/features/theme/customise";
@@ -13,8 +13,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const { client } = useClient();
+
   // State to manage the isOpen prop
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = client.useState(false);
 
   return (
     <ProtectedPage>
