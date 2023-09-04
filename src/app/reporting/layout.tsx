@@ -1,5 +1,5 @@
 import { ProtectedPage } from "@/features/auth/protected-page";
-import MainMenu from "@/features/menu/menu";
+import { MainMenu } from "@/features/menu/menu";
 import { AI_NAME } from "@/features/theme/customise";
 
 export const metadata = {
