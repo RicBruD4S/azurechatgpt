@@ -1,5 +1,5 @@
 import { ProtectedPage } from "@/features/auth/protected-page";
-import { MainMenu as MainMenuCustom } from "@/features/menu/menu";
+import MainMenu from "@/features/menu/menu";
 import { AI_NAME } from "@/features/theme/customise";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default async function RootLayout({
 }) {
   return (
     <ProtectedPage>
-      <MainMenuCustom />
+      <MainMenu />
       <div className="flex-1">{children}</div>
     </ProtectedPage>
   );
