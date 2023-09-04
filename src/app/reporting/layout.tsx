@@ -2,7 +2,6 @@ import { ProtectedPage } from "@/features/auth/protected-page";
 import { MainMenu } from "@/features/menu/menu";
 import { AI_NAME } from "@/features/theme/customise";
 import Link from "next/link";
-import { UserProfile } from "../user-profile"
 
 export const metadata = {
   title: AI_NAME,
